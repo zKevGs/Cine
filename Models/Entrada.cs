@@ -5,13 +5,12 @@ namespace Cine.Models
 {
     public class Entrada
     {
-        public Cine Cine { get; set; }
-        public Pelicula Pelicula { get; set; }
-        public Asiento Asiento { get; set; }
-        public double PrecioBase { get; set; }
-        public DateTime Fecha { get; set; }
+        public Cine Cine { get; private set; }
+        public Pelicula Pelicula { get; private set; }
+        public Asiento Asiento { get; private set; }
+        public double PrecioBase { get; private set; }
+        public DateTime Fecha { get; private set; }
 
-        // Propiedad derivada que calcula el precio final
         public double PrecioFinal
         {
             get

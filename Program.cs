@@ -6,8 +6,6 @@ class Program
 {
         public static void Main(string[] args)
         {
-            // Ejemplo de uso del sistema de cine
-
 
             Cine cine = new Cine("Cineplex");
             Sala sala = new Sala(1);
@@ -18,7 +16,6 @@ class Program
             sala.ReproducirPelicula(pelicula);
             cine.AgregarSala(sala);
 
-            
             Entrada entrada = new Entrada(cine, pelicula, asiento1, 8000, DateTime.Now);
             entrada.MostrarDetalles();
         }
